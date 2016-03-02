@@ -20,6 +20,7 @@ class UserMailer < ApplicationMailer
     @greeting = "you have changed your email"
     attachments.inline['cb.png'] = File.read('public/cb.png')
     mail(:to => @user.email , :subject => "Email changed")
+    # commenttinh
   end
 
 end
