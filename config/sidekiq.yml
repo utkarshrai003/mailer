@@ -1,0 +1,9 @@
+
+
+:verbose: false
+:concurrency: 2
+:queues:
+  - [registration , 7]
+  - [session, 7]
+  - [notifier, 7]
+

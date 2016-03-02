@@ -1,0 +1,13 @@
+<%= "SIGN IN HERE" %></br></br>
+
+<%= form_for @user , url: signin_index_path do |f|%>
+
+    <%= f.label :email %>
+	<%= f.text_field :email %></br></br>
+
+	<%= f.label :password %>
+	<%= f.text_field :password %></br></br>
+
+	<%= f.submit "sign-up" %>
+
+<% end %>
