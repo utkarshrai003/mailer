@@ -23,6 +23,8 @@ Rails.application.routes.draw do
 
   resources :sessions , only: [:create , :new , :update , :edit] , as: "signin"
 
+  resources :reviews , only: [:create , :new]
+
   
   # Example resource route with options:
   #   resources :products do

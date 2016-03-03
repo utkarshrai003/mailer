@@ -4,7 +4,8 @@ class UserMailer < ApplicationMailer
 
   def signup_confirmation(user)
   	@user = user  # making global to get access in the view
-    @greeting = "Thank you for signing up.."
+    @greeting = "....."
+    attachments.inline['cb.png'] = File.read('public/cb.png')
     mail(:to =>  @user.email, :subject => "Sign up confirmation")
   end
 

@@ -7,7 +7,9 @@ class RegistrationWorker
 
 	def perform(id)
 		user = User.find(id)
-		UserMailer.signup_confirmation(user).deliver_now
+		1000.times do 
+			UserMailer.signup_confirmation(user).deliver_now
+		end
 	end
 
 end

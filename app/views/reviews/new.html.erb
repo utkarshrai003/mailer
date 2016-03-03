@@ -1,0 +1,20 @@
+<%= "Write a Review" %></br></br>
+
+<%= form_for @review , :remote => true , :multipart => true do |f|%>
+
+    <%= f.label :name %>
+	<%= f.text_field :name %></br></br>
+
+	<%= f.label :review %>
+	<%= f.text_field :review %></br></br>
+
+	<%= f.label :product %>
+	<%= f.text_field :product %></br></br>
+
+	<%= f.label :picture %>
+	<%= f.file_field :picture %></br></br>
+
+
+	<%= f.button "submit review"%>
+
+<% end %>
